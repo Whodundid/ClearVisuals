@@ -1,0 +1,16 @@
+[
+{
+  "modid": "clearvisuals",
+  "name": "Clear Visuals",
+  "description": "EMCApp: Provides gama control, water/lava visibility, and more",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Whodundid, Mr.JamminOtter"],
+  "credits": "Requires 'EnhancedMC' version 1.0 to work!",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": ["enhancedmc"]
+}
+]
