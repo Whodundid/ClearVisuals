@@ -34,7 +34,7 @@ public class ClearVisualsWindow extends WindowParent {
 		windowIcon = CVResources.icon;
 		
 		setResizeable(true);
-		setMinDims(defaultWidth, defaultHeight);
+		setMinDims(defaultWidth, 100);
 		setMaximizable(true);
 	}
 	
@@ -132,10 +132,10 @@ public class ClearVisualsWindow extends WindowParent {
 		
 		IActionObject.setActionReceiver(this, removeFire, removeWaterOverlay, removeFog, clearLava, clearWater, gamaSlider, gamaEntry, resetGama);
 		
-		rendering.addObject(null, removeFire, removeWaterOverlay, removeFog, clearLava, clearWater);
-		gama.addObject(null, gamaSlider, resetGama, gamaEntry);
+		rendering.addObject(removeFire, removeWaterOverlay, removeFog, clearLava, clearWater);
+		gama.addObject(gamaSlider, resetGama, gamaEntry);
 		
-		addObject(null, rendering, gama);
+		addObject(rendering, gama);
 	}
 	
 	@Override
